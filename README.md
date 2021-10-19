@@ -2,15 +2,18 @@
 
 
                 Welcome to our MYSK Hospital 
+ Markup : * We have good dentists here who will try to make your teeth and your smile beautiful.
 
-=>We have good dentists here who will try to make your teeth and your smile beautiful.
-=>We have good doctors here qualified poets and they have a lot of training and they .
-=> Here you will find good quality medicine and now you will get good quality service.
-=>We provide ambulance service 24 hours a day anytime our service is on and will bring your patients quickly and carefully with dignity 
+ Markup : * We have good doctors here qualified poets and they have a lot of training and they .
+ Markup : * Here you will find good quality medicine and now you will get good quality service.
 
-=> We provide good quality medicine and we have been honored by your government.
-=>We have a cardiologist here who will give you a very good quality service and will work with your services.
-=>Our hospital is open 24 hours a day. We are ready to serve you at any time. Thank you!
+ Markup : * We provide ambulance service 24 hours a day anytime our service is on and will bring your patients quickly and carefully with dignity 
+
+ Markup : * We provide good quality medicine and we have been honored by your government.
+
+ Markup : * We have a cardiologist here who will give you a very good quality service and will work with your services.
+ 
+ Markup : * Our hospital is open 24 hours a day. We are ready to serve you at any time. Thank you!
 
 
 =>Live Site : https://mysk-hospital.web.app/services 
