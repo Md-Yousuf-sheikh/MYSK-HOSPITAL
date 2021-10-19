@@ -1,11 +1,24 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../Hooks/useAuth';
-
+import { useHistory, useLocation } from 'react-router';
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const { signInWithEmailPassword, sinInUsingGoogle } = useAuth();
+    const { signInWithEmailPassword, setError, setUser, sinInUsingGoogle } = useAuth();
+    const history = useHistory()
+    const location = useLocation();
+    const redirect_uri = location.state?.from || "/home";
+
+    const handelGoogleSinIn = () => {
+        sinInUsingGoogle()
+            .then((result) => {
+                setUser(result.user);
+                history.push(redirect_uri)
+            }).catch((error) => {
+                setError(error.message);
+            })
+    }
 
     // login with email and password
     const handelSinInSubmit = e => {
@@ -71,7 +84,7 @@ const Login = () => {
                         <span class="h-px w-16 bg-gray-300"></span>
                     </div>
                     <div class="flex flex-row justify-center items-center space-x-3">
-                        <span onClick={sinInUsingGoogle} class="w-11 h-11 items-center justify-center inline-flex rounded-full font-bold text-lg  text-white bg-blue-400 hover:shadow-lg cursor-pointer transition ease-in duration-300"><i class="fab fa-google"></i></span>
+                        <span onClick={handelGoogleSinIn} class="w-11 h-11 items-center justify-center inline-flex rounded-full font-bold text-lg  text-white bg-blue-400 hover:shadow-lg cursor-pointer transition ease-in duration-300"><i class="fab fa-google"></i></span>
                         <span class="w-11 h-11 items-center justify-center inline-flex rounded-full font-bold text-lg  text-white  bg-blue-900 hover:shadow-lg cursor-pointer transition ease-in duration-300"><i class="fab fa-facebook"></i></span>
                         <span class="w-11 h-11 items-center justify-center inline-flex rounded-full font-bold text-lg  text-white bg-blue-500 hover:shadow-lg cursor-pointer transition ease-in duration-300"><i class="fab fa-github"></i></span>
                     </div>

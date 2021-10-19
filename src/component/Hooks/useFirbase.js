@@ -17,7 +17,7 @@ const useFirbase = () => {
     };
     // password gmail
     const createUserWithEmail = (name, email, password) => {
-        createUserWithEmailAndPassword(auth, name, email, password)
+        createUserWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 // Signed In
                 const user = result.user;
@@ -26,6 +26,7 @@ const useFirbase = () => {
             }).catch((error) => {
                 setError(error.message);
             })
+            .finally(() => setIsLoading(false));
     }
     // email password account 
     const signInWithEmailPassword = (email, password) => {

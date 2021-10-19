@@ -7,7 +7,6 @@ import {
 import Footer from './component/Footer/Footer';
 import Header from './component/Header/Header';
 import Home from './component/Home/Home';
-import Services from './component/Services/Services';
 import Doctors from './component/Doctors/Doctors';
 import ContactUs from './component/ContactUs/ContactUs';
 import Login from './component/Login/Login';
@@ -18,6 +17,7 @@ import About from './component/About/About';
 import Appointment from './component/Appointment/Appointment';
 import PrivateRoute from './component/PrivateRoute/PrivateRoute';
 import Blog from './component/Blog/Blog';
+import ServicesDetail from './component/ServicesDetail/ServicesDetail';
 
 function App() {
   return (
@@ -34,8 +34,8 @@ function App() {
           <Route path="/register">
             <Register></Register>
           </Route>
-          <PrivateRoute path="/services">
-            <Services />
+          <PrivateRoute path="/ServicesDetail/:serviceId">
+            <ServicesDetail />
           </PrivateRoute>
           <Route path="/contact">
             <ContactUs />
@@ -49,6 +49,9 @@ function App() {
           <PrivateRoute path="/appointment">
             <Appointment />
           </PrivateRoute>
+          <Route exact path="/home">
+            <Home />
+          </Route>
           <Route exact path="/">
             <Home />
           </Route>
