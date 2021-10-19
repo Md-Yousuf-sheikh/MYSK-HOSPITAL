@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "name": "Dr. Sarah Taylor",
+        "img": "https://i.ibb.co/5LmRf2R/01.jpg",
+        "category": "Cardiology"
+    },
+    {
+        "id": "2",
+        "name": "Dr.Jas Macham",
+        "img": "https://i.ibb.co/GRKqmzj/04.jpg",
+        "category": "Cardiology"
+    },
+    {
+        "id": "3",
+        "name": "Dr.Alinson Backer",
+        "img": "https://i.ibb.co/sV8SN4P/03.jpg",
+        "category": "Cardiology"
+    },
+    {
+        "id": "4",
+        "name": "Dr.Alinson Backer",
+        "img": "https://i.ibb.co/wdrBXWR/02.png",
+        "category": "Cardiology"
+    },
+    {
+        "id": "5",
+        "name": "Dr.Alinson Backer",
+        "img": "https://i.ibb.co/f8BpHrp/05.jpg",
+        "category": "Cardiology"
+    },
+    {
+        "id": "6",
+        "name": "Dr.Alinson Backer",
+        "img": "https://i.ibb.co/LSPgfQb/06.jpg",
+        "category": "Cardiology"
+    },
+    {
+        "id": "7",
+        "name": "Dr.Alinson Backer",
+        "img": "https://i.ibb.co/pfFf63s/07.jpg",
+        "category": "Cardiology"
+    },
+    {
+        "id": "8",
+        "name": "Dr.Alinson Backer",
+        "img": "https://i.ibb.co/W3n16xc/08.jpg",
+        "category": "Cardiology"
+    }
+]
