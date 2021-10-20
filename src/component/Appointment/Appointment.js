@@ -11,9 +11,9 @@ const Appointment = () => {
                 </div>
                 <p className="mb-3 text-center ">We will confirm your appointment</p>
             </div>
-            <div className="w-full bg-grey-500">
+            <div className=" px-4 bg-grey-500 ">
                 <div className="container mx-auto py-8">
-                    <div className="w-96 mx-auto bg-blue-50 rounded shadow">
+                    <div className="mx-auto bg-blue-50 rounded shadow">
                         <div className="mx-16 py-4 px-8 text-black text-xl font-bold border-b border-grey-500">Appointment
                         </div>
 
