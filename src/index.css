@@ -14,3 +14,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@layer components {
+  .footer-icon {
+    @apply shadow-lg hover:shadow font-normal h-10 w-10 items-center justify-center rounded-full outline-none focus:outline-none mr-2
+  }
+}

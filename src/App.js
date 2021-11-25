@@ -18,6 +18,7 @@ import Appointment from './component/Appointment/Appointment';
 import PrivateRoute from './component/PrivateRoute/PrivateRoute';
 import Blog from './component/Blog/Blog';
 import ServicesDetail from './component/ServicesDetail/ServicesDetail';
+import Service from './component/Home/Service/Service';
 
 function App() {
   return (
@@ -45,6 +46,9 @@ function App() {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/service">
+            <Service />
           </Route>
           <PrivateRoute path="/appointment">
             <Appointment />

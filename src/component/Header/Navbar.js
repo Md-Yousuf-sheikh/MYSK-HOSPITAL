@@ -5,7 +5,7 @@ import useAuth from '../Hooks/useAuth';
 const Navbar = ({ toggle }) => {
     const { user, logOut } = useAuth();
     return (
-        <nav className="flex container mx-auto px-4 justify-between items-center h-16 bg-white text-black relative shadow-sm " role='navigation' >
+        <nav className="flex container mx-auto px-4 justify-between items-center py-3 bg-white text-black relative shadow-lg hover:shadow " role='navigation' >
             <Link to="/" className=" font-bold text-red-400 text-1xl md:text-2xl  ">
                 MYSK
             </Link>
@@ -20,7 +20,7 @@ const Navbar = ({ toggle }) => {
                 <Link className="p-4 hover:text-blue-500" to="/about">
                     About
                 </Link>
-                <Link className="p-4 hover:text-blue-500" to="/services">
+                <Link className="p-4 hover:text-blue-500" to="/service">
                     Service
                 </Link>
                 <Link className="p-4 hover:text-blue-500" to="/doctors">
