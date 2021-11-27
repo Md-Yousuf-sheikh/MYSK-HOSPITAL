@@ -37,7 +37,7 @@ const useFirbase = () => {
             })
             .catch((error) => {
                 setError(error.message);
-            });
+            }).finally(() => setIsLoading(false));
     }
     // Set User Name` 
     const updateName = name => {
@@ -57,17 +57,23 @@ const useFirbase = () => {
     }
 
     // oneAuth state chang
+    // Observer user state
     useEffect(() => {
-        const unsubscribed = onAuthStateChanged(auth, (user) => {
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
-                setUser(user)
+                // set user
+                setUser(user);
+
             } else {
+                // User is signed out
                 setUser({})
             }
             setIsLoading(false)
         });
-        return () => unsubscribed;
+
+        return () => unsubscribe;
     }, [])
+
 
     return {
         user, createUserWithEmail, signInWithEmailPassword, setUser, setError, error, setIsLoading, logOut, sinInUsingGoogle, isLoading

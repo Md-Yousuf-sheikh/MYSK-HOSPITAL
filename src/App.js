@@ -19,6 +19,7 @@ import PrivateRoute from './component/PrivateRoute/PrivateRoute';
 import Blog from './component/Blog/Blog';
 import ServicesDetail from './component/ServicesDetail/ServicesDetail';
 import Service from './component/Home/Service/Service';
+import Appointments from './component/Appointments/Appointments/Appointments';
 
 function App() {
   return (
@@ -53,6 +54,10 @@ function App() {
           <PrivateRoute path="/appointment">
             <Appointment />
           </PrivateRoute>
+          <PrivateRoute path="/Appointments">
+            <Appointments />
+          </PrivateRoute>
+
           <Route exact path="/home">
             <Home />
           </Route>

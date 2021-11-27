@@ -9,9 +9,8 @@ const ContactUs = () => {
                 <div className="text-center py-5 text-blue-400">
                     <Link to="/" className="hover:text-blue-600">Home</Link> / <span className="font-medium text-blue-400">Contact</span>
                 </div>
-                <p className="mb-3 text-center ">Contact our doctor need your any help your health .</p>
             </div>
-            <div className=" md:justify-around  md:flex sm:px-5 container px-4">
+            <div className=" md:justify-around  py-2 md:flex sm:px-5 container px-4">
                 <div className="mt-5 md:px-5">
                     <h1 className="uppercase text-3xl  lg:text-4xl mb-3 text-red-200 font-medium">MYSK hospital</h1>
                     <div className="bg-blue-200 w-10 h-1 mb-5"></div>
@@ -62,7 +61,6 @@ const ContactUs = () => {
                                 Send
                             </button>
                         </div>
-                        <div class="md:w-2/3"></div>
                     </div>
                 </form>
             </div>

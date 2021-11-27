@@ -9,12 +9,12 @@ const Appointment = () => {
                 <div className="text-center py-5 text-blue-400">
                     <Link to="/" className="hover:text-blue-600">Home</Link> / <span className="font-medium text-blue-400">Service</span>
                 </div>
-                <p className="mb-3 text-center ">We will confirm your appointment</p>
             </div>
-            <div className=" px-4 bg-grey-500 ">
+            <div className=" mx-auto w-10/12 md:9/12 lg:5/12 bg-grey-500 ">
                 <div className="container mx-auto py-8">
                     <div className="mx-auto bg-blue-50 rounded shadow">
-                        <div className="mx-16 py-4 px-8 text-black text-xl font-bold border-b border-grey-500">Appointment
+                        <div className="mx-16 py-4 px-8 text-black text-xl font-bold border-b border-grey-500">
+                            Appointment
                         </div>
 
                         <form name="student_application" id="student_application" action="">
@@ -41,7 +41,7 @@ const Appointment = () => {
 
                                 </div>
                                 <div className="mb-4">
-                                    <button className="rounded px-5 text-white shadow-lg hover:shadow py-1 bg-gradient-to-r from-blue-300 to-blue-500 ">
+                                    <button type="submit" className="rounded px-5 text-white shadow-lg hover:shadow py-1 bg-gradient-to-r from-blue-300 to-blue-500 ">
                                         Submit
                                     </button>
                                 </div>

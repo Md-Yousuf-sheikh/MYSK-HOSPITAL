@@ -9,7 +9,6 @@ const About = () => {
                 <div className="text-center py-5 text-blue-400">
                     <Link to="/" className="hover:text-blue-600">Home</Link> / <span className="font-medium text-blue-400">About</span>
                 </div>
-                <p className="mb-3 text-center ">Our Services and doc about us! </p>
             </div>
             <div class="relative pt-16 bg-blueGray-50">
                 <div class="container mx-auto">

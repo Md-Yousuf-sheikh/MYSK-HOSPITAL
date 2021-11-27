@@ -28,6 +28,9 @@ const Dropdown = ({ isOpen, toggle }) => {
             <Link className="p-4 hover:text-white" to="/doctors">
                 Doctors
             </Link>
+            <Link className="p-4 hover:text-white" to="/doctors">
+                Appointments
+            </Link>
             <Link className="p-4 hover:text-white" to="/blog">
                 Blog
             </Link>

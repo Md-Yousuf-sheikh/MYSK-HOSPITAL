@@ -12,9 +12,8 @@ const Doctors = () => {
                 <div className="text-center py-5 text-blue-400">
                     <Link to="/" className="hover:text-blue-600">Home</Link> / <span className="font-medium text-blue-400">Doctor</span>
                 </div>
-                <p className="mb-3 text-center ">There are best doctor our service is best expert doctor   </p>
             </div>
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 mx-auto container px-4 xl:grid-cols-4 gap-4">
+            <div className="grid sm:grid-cols-1 py-3 md:grid-cols-2 mx-auto container px-4 xl:grid-cols-4 gap-4">
                 {
                     doctor.map(dr => <Docter dr={dr} key={dr.id} />)
                 }
